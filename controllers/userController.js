@@ -37,6 +37,11 @@ exports.updateProfile = async (req, res) => {
 
 // Admin: Get all users
 exports.getAllUsers = async (req, res) => {
+  const users = await User.find().select('-password');
+  res.json(users);
+}
+
+exports.getAllCustomers = async (req, res) => {
   const users = await User.find({ role: 'user' }).select('-password');
   res.json(users);
 };

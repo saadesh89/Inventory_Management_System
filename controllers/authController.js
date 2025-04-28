@@ -1,8 +1,6 @@
 const User = require('../models/User');
-// const bcrypt = require('bcryptjs');
 const generateToken = require('../utils/generateToken');
 const { sendEmail } = require('./mail');
-// const { sendEmail } = require('./mail');
 
 
 const createUser = async ({ name, email, password, role = 'user' }, requesterRole) => {

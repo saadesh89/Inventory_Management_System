@@ -10,7 +10,6 @@ exports.getAllProducts = async (req, res) => {
   }
 };
 
-
 // Admin: Create new product
 exports.createProduct = async (req, res) => {
   const { name, stock } = req.body;

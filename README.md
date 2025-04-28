@@ -1,4 +1,5 @@
 **1)** **authRoutes**
-<br>
+  <br>
   **- Register:** /api/auth/register
+  <br>
    **- Login:**  /api/auth/login
